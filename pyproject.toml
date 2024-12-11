@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "shoutbase-timesheet-generator"
+version = "0.1.0"
+description = "Toolchain for generating timesheets from ShoutBase"
+authors = ["Ethan Ho <53266718+ethho@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+typer = "^0.15.1"
+
+[tool.poetry.scripts]
+shoutbase-ts = "shoutbase_timesheet_generator.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
